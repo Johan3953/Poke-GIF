@@ -80,7 +80,7 @@ function createButtons() {
     }
 
 
-    $("#pokemon").on("click", function () {
+    $(".Pokemon").on("click", function () {
 
         $("#pokemon-view").empty();
 
