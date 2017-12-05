@@ -7,7 +7,7 @@ var pokedex = ["Bulbasaur", "Venusaur", "Charmander", "Charizard", "Squirtle", "
 var numResults = 0;
 var Pokemon = $(this).attr("data-name");
 var apiKey = "NzPgX0d8X7mQF3az8okD95CSLzjSmrAX";
-var queryURLStarter = "https://api.giphy.com/v1/gifs/search?api_key=" + apiKey;
+var queryURLStarter = "http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=" + apiKey;
 
 var giphyCounter = 0;
 
