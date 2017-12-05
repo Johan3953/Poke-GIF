@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke Gif</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Catch Them All</h1>
+        <!--auto create buttons-->
+        <div id="buttons-view"></div>
+
+        <!--search button-->
+        <form id="pokemon-form">
+            <label for="pokemon-input">Search Your Pokedex</label>
+            <input type="text" id="pokemon-input">
+            <br>
+
+            <input id="#add-pokemon" class="btn-success" type="submit" value="Add pokemon">
+        </form>
+
+        <div class="container">
+            <div id="pokemon-view" class="row"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
