@@ -59,7 +59,7 @@ function displayGiphy(numGIPHY, queryURL) {
 
 
 
-function createButtons() {
+function renderButtons() {
 
     $('#buttons-view').empty();
 
@@ -67,7 +67,7 @@ function createButtons() {
 
     for (var i = 0; i < pokedex.length; i++) {
 
-        //creates buttons 
+        //renders buttons 
         var PokemonBtn = $("<button>");
 
         PokemonBtn.addClass("btn-primary Pokemon");
@@ -94,13 +94,15 @@ function createButtons() {
 
 $(function () {
 
-    $("#add-Pokemon").on("click", function (event) {
+    $("#add-pokemon").on("click", function (event) {
         event.preventDefault();
         var pokemon = $("#pokemon-input").val().trim();
+        console.log("new",pokemon);
+        console.log("array",pokedex);
         pokedex.push(pokemon);
-        console.log(movies);
+        console.log("new Array",pokedex)
 
-        createButtons();
+        renderButtons();
     });
-    createButtons();
+    renderButtons();
 })
